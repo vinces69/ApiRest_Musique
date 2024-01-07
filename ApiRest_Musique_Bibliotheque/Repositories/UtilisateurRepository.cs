@@ -18,7 +18,7 @@ namespace ApiRest_Musique_Bibliotheque.Repositories
             return await utilisateurs;
         }
 
-        public async Task<Utilisateur> GetUtilisateursByIdAsync(int id)
+        public async Task<Utilisateur> GetUtilisateurByIdAsync(string id)
         {
             return await _ctx.Utilisateurs.FindAsync(id);
         }
@@ -41,11 +41,6 @@ namespace ApiRest_Musique_Bibliotheque.Repositories
             await _ctx.SaveChangesAsync();
         }
 
-        public async Task<Utilisateur> GetUtilisateurByIdAsync(int id)
-        {
-            return await _ctx.Utilisateurs.FindAsync(id);
-        }
-
-      
+             
     }
 }
