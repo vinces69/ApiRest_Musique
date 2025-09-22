@@ -22,7 +22,9 @@ namespace ApiRest_Musique_Bibliotheque.Models
         public string? POCHETTEALBUM { get; set; }
         public string? COMPOSITEURALBUM { get; set; }
 
+        public string? LINKYOUALBUM { get; set; }
 
+        public string? LINKARTISTEALBUM { get; set; }
 
 
     }

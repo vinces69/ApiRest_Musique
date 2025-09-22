@@ -11,7 +11,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<AlbumContext>();
 builder.Services.AddTransient<IAlbumRepository,AlbumRepository>();
-
+builder.Services.AddTransient<UtilisateurContext>();
+builder.Services.AddTransient<IUtilisateurRepository, UtilisateurRepository>();
+builder.Services.AddTransient<PossedeContext>();
+builder.Services.AddTransient<IPossedeRepository, PossedeRepository>();
 
 var app = builder.Build();
 

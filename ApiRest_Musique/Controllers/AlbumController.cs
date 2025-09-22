@@ -51,6 +51,10 @@ namespace ApiRest_Musique.Controllers
                 existingAlbum.GROUPEALBUM = albumToUpdate.GROUPEALBUM;
                 existingAlbum.COMPOSITEURALBUM = albumToUpdate.COMPOSITEURALBUM;
                 existingAlbum.ARTISTEALBUM = albumToUpdate.ARTISTEALBUM;
+                existingAlbum.LINKYOUALBUM = albumToUpdate.LINKYOUALBUM;
+                existingAlbum.LINKARTISTEALBUM = albumToUpdate.LINKARTISTEALBUM;
+
+
                 await _albumRepo.UpdateAlbumAsync(existingAlbum);
                return NoContent();
             }
