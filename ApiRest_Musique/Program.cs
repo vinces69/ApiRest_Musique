@@ -14,7 +14,7 @@ builder.Services.AddTransient<IUtilisateurRepository, UtilisateurRepository>();
 builder.Services.AddTransient<PossedeContext>();
 builder.Services.AddTransient<IPossedeRepository, PossedeRepository>();
 
-// ?? Ajout de la politique CORS
+//Ajout gestion CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -39,7 +39,7 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-// ?? Activation de CORS
+//Activation de CORS
 app.UseCors("AllowAll");
 
 app.UseAuthorization();
